@@ -86,7 +86,7 @@ ul.clean li:before{content:"+";position:absolute;left:0;color:var(--cyan);font-w
 /* tables */
 .tbl{width:100%;border-collapse:collapse;font-size:15px}
 .tbl th{font-family:var(--head);font-weight:500;text-align:left;color:var(--navy);border-bottom:2px solid var(--navy);padding:10px 10px;white-space:nowrap}
-.mkt td:first-child{white-space:nowrap}
+.mkt td:first-child,.b2b td+td{white-space:nowrap}
 .tbl td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
 .tbl tr.me td{background:var(--tint);font-weight:500}
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;background:#fff}
@@ -243,7 +243,7 @@ footer a{color:#fff}
   <div class="grid g2" style="margin-top:40px;align-items:start">
     <div>
       <h3 style="margin-bottom:6px">Cinco hallazgos que definen la estrategia</h3>
-      <div class="insight"><div class="n">1</div><div><h4>El precio vive en el DM</h4><p class="small">Ninguna cuenta activa publica una tabla de precios. Lo único parecido fue "desde 180$ todo el día" de @yatestucacas, en 2023.</p><div class="so">Para Rentaboat: el precio es el mensaje. USD 190 · 210 · 340 en cada pieza de venta.</div></div></div>
+      <div class="insight"><div class="n">1</div><div><h4>El precio vive en el DM</h4><p class="small">Ninguna cuenta activa publica una tabla de precios. Lo único parecido fue "desde 180$ todo el día" de @yatestucacas, en 2023.</p><div class="so">Para Rentaboat: el precio es el mensaje. USD 240 · 260 · 360 (temporada baja) en cada pieza de venta.</div></div></div>
       <div class="insight"><div class="n">2</div><div><h4>Las vistas las ganan los reels de "escape"</h4><p class="small">@inflabeach: 381K vistas (3 sep 2026) y 317K (16 ene 2026) con ganchos como "¿y si llegamos de repente a un lugar así?" o "Entre semana es otro nivel". Todo es video crudo.</p><div class="so">Motion graphics con 2-4 s de agua real: la emoción del paisaje con un formato que nadie más usa.</div></div></div>
       <div class="insight"><div class="n">3</div><div><h4>Se compite en confianza</h4><p class="small">"Oficina física", "somos empresa, RIF", "16 años de experiencia", destacadas de PAGOS en casi todas las cuentas.</p><div class="so">Rentaboat tiene lo que nadie puede copiar: dueño directo, 19+ años, flota propia y marina privada. Hay que decirlo y mostrarlo.</div></div></div>
       <div class="insight"><div class="n">4</div><div><h4>Todos se llaman y suenan igual</h4><p class="small">TuLancha, Tu Lancha Morrocoy, Lanchas Tucacas, Lanchas VIP... y "Tu mejor opción" ya lo usa @lanchastucacasvl.</p><div class="so">Dejar "Tu mejor opción para Morrocoy" como frase de apoyo y adoptar una promesa propia.</div></div></div>
@@ -283,15 +283,23 @@ footer a{color:#fff}
   <div class="sec-head"><span class="eyebrow">02 · Posicionamiento</span><h2>Directo del dueño, con precio claro</h2>
   <p>Elegimos la transparencia porque es el único territorio vacío del mercado, porque reduce la fricción para quien planifica desde Caracas o Valencia, y porque solo un dueño directo con tarifa fija puede sostenerla. Un intermediario no puede publicar un precio que no controla.</p></div>
 
-  <div class="prices" aria-label="Tarifas públicas Rentaboat">
-    <div class="price"><div class="boat">Neptune · Nomad · Raid · Typhon</div><div class="model">Bayliner 160 · 5 personas</div><div class="usd"><span>USD</span> 190</div><div class="pp">USD 38 por persona con lancha completa</div></div>
-    <div class="price"><div class="boat">Highlander</div><div class="model">Bayliner 180 · 6 personas</div><div class="usd"><span>USD</span> 210</div><div class="pp">USD 35 por persona con lancha completa</div></div>
-    <div class="price"><div class="boat">Andreita</div><div class="model">Yamaha 230 · 8 personas</div><div class="usd"><span>USD</span> 340</div><div class="pp">USD 42.50 por persona con lancha completa</div></div>
+  <h3 style="margin-bottom:10px">Tarifas públicas · vigentes desde el 1 oct 2026</h3>
+  <p class="small" style="margin-bottom:8px"><span class="tag">Temporada baja</span></p>
+  <div class="prices" aria-label="Tarifas públicas Rentaboat, temporada baja">
+    <div class="price"><div class="boat">Neptune · Nomad · Raid · Typhon</div><div class="model">Bayliner 160 · 5 personas</div><div class="usd"><span>USD</span> 240</div><div class="pp">USD 48 por persona con lancha completa</div></div>
+    <div class="price"><div class="boat">Highlander</div><div class="model">Bayliner 180 · 6 personas</div><div class="usd"><span>USD</span> 260</div><div class="pp">USD 43.33 por persona con lancha completa</div></div>
+    <div class="price"><div class="boat">Andreita</div><div class="model">Yamaha 230 · 8 personas</div><div class="usd"><span>USD</span> 360</div><div class="pp">USD 45 por persona con lancha completa</div></div>
   </div>
-  <p class="small" style="margin-top:10px">Incluye capitán, salida desde Marina Puerto Varadero con estacionamiento vigilado, ruta libre dentro del Parque Nacional Morrocoy, sonido Bluetooth y chalecos. Lunes a domingo, 9:00 a 5:00.</p>
+  <p class="small" style="margin:22px 0 8px"><span class="tag c">Temporada alta</span></p>
+  <div class="prices" aria-label="Tarifas públicas Rentaboat, temporada alta">
+    <div class="price"><div class="boat">Neptune · Nomad · Raid · Typhon</div><div class="model">Bayliner 160 · 5 personas</div><div class="usd"><span>USD</span> 320</div><div class="pp">USD 64 por persona con lancha completa</div></div>
+    <div class="price"><div class="boat">Highlander</div><div class="model">Bayliner 180 · 6 personas</div><div class="usd"><span>USD</span> 340</div><div class="pp">USD 56.67 por persona con lancha completa</div></div>
+    <div class="price"><div class="boat">Andreita</div><div class="model">Yamaha 230 · 8 personas</div><div class="usd"><span>USD</span> 440</div><div class="pp">USD 55 por persona con lancha completa</div></div>
+  </div>
+  <p class="small" style="margin-top:10px">Incluye capitán, salida desde Marina Puerto Varadero con estacionamiento vigilado, ruta libre dentro del Parque Nacional Morrocoy, sonido Bluetooth y chalecos. Lunes a domingo, 9:00 a 5:00. <b>Aparte:</b> cada vehículo paga una tasa de instalaciones de la marina de USD 20 (pagadera en Bs o $ a la tasa del día). Se comunica siempre junto al precio, para que no haya sorpresas.</p>
 
   <div class="grid g4" style="margin-top:34px">
-    <div class="card"><span class="tag c">Prueba 1</span><h4 style="margin-top:12px">Precio claro</h4><p class="small">Precio por lancha y por persona en cada pieza de venta, en la bio y en la web. Las condiciones también se publican: 50% para reservar, cambio de fecha dentro de 90 días.</p></div>
+    <div class="card"><span class="tag c">Prueba 1</span><h4 style="margin-top:12px">Precio claro</h4><p class="small">Precio por lancha y por persona en cada pieza de venta, en la bio y en la web. Las condiciones también se publican: 50% para reservar, cambio de fecha dentro de 90 días y tasa de marina de USD 20 por vehículo.</p></div>
     <div class="card"><span class="tag c">Prueba 2</span><h4 style="margin-top:12px">Directo del dueño</h4><p class="small">19+ años, flota propia, sin comisiones de intermediarios y respuesta directa si surge un imprevisto. Mostrar al dueño y la flota real.</p></div>
     <div class="card"><span class="tag c">Prueba 3</span><h4 style="margin-top:12px">Capitán que conoce Morrocoy</h4><p class="small">Ruta libre armada con el capitán: cayos, bajos y horarios según el mar del día. El capitán es la cara del servicio.</p></div>
     <div class="card"><span class="tag c">Prueba 4</span><h4 style="margin-top:12px">Imagen premium</h4><p class="small">Reels 100% motion graphics en navy, cyan y blanco. Un sistema visual que se reconoce sin leer el nombre.</p></div>
@@ -383,15 +391,15 @@ footer a{color:#fff}
   <div class="sec-head"><span class="eyebrow">05 · Reels en motion graphics</span><h2>12 conceptos listos para guion</h2>
   <p>Formato del perfil de cliente: 12-20 s, gancho tipográfico en 0-1.5 s, revelación del nombre de la lancha, datos animados (precio en cyan, capacidad, incluidos) y cierre con WhatsApp y el logo. Recomendación: 2-4 s de agua o cayo reales dentro de cada reel.</p></div>
   <div class="grid g3">
-    <article class="reel"><div class="top"><span class="k">01 · Venta</span><h3>El precio que nadie te dice</h3></div><div class="bd"><ol><li>Texto "¿CUÁNTO CUESTA UNA LANCHA EN MORROCOY?" sobre el agua.</li><li>Tres paneles: Bayliner 160 · 180 · Yamaha 230.</li><li>Los precios suben con conteo: 190 · 210 · 340.</li></ol><div class="cta">CTA: "Escribe MORROCOY y te mandamos disponibilidad"</div></div></article>
-    <article class="reel"><div class="top"><span class="k">02 · Venta</span><h3>¿Cuántos son?</h3></div><div class="bd"><ol><li>Contador de personas que salta 5 → 6 → 8.</li><li>Cada número revela su lancha.</li><li>Cierre con precio por persona: 38 · 35 · 42.50.</li></ol><div class="cta">CTA: "Dinos cuántos son por WhatsApp"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">01 · Venta</span><h3>El precio que nadie te dice</h3></div><div class="bd"><ol><li>Texto "¿CUÁNTO CUESTA UNA LANCHA EN MORROCOY?" sobre el agua.</li><li>Tres paneles: Bayliner 160 · 180 · Yamaha 230.</li><li>Los precios suben con conteo: 240 · 260 · 360 (temporada baja; en alta 320 · 340 · 440).</li><li>Línea fina: "+ USD 20 de marina por vehículo".</li></ol><div class="cta">CTA: "Escribe MORROCOY y te mandamos disponibilidad"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">02 · Venta</span><h3>¿Cuántos son?</h3></div><div class="bd"><ol><li>Contador de personas que salta 5 → 6 → 8.</li><li>Cada número revela su lancha.</li><li>Cierre con precio por persona: 48 · 43.33 · 45 (temporada baja).</li></ol><div class="cta">CTA: "Dinos cuántos son por WhatsApp"</div></div></article>
     <article class="reel"><div class="top"><span class="k">03 · Morrocoy</span><h3>Tu día en 15 segundos</h3></div><div class="bd"><ol><li>Reloj 9:00: salida desde la marina, estacionamiento vigilado.</li><li>Línea de tiempo por cayos con clips cortos.</li><li>5:00: regreso con el atardecer.</li></ol><div class="cta">CTA: "Reserva tu fecha con el 50%"</div></div></article>
     <article class="reel"><div class="top"><span class="k">04 · Morrocoy</span><h3>Ruta libre</h3></div><div class="bd"><ol><li>El mapa del parque se dibuja con líneas finas.</li><li>Pines de cayos cerca de Tucacas (Sombrero, Muerto, Los Juanes, Boca Seca...).</li><li>"Tú eliges, el capitán conoce el camino."</li></ol><div class="cta">Validar la lista de cayos con el capitán</div></div></article>
     <article class="reel"><div class="top"><span class="k">05 · Confianza</span><h3>19 años</h3></div><div class="bd"><ol><li>Contador 2007 → 2026 (confirmar año de inicio).</li><li>"Una sola flota. Un solo dueño."</li><li>Las 6 lanchas en cuadrícula con sus nombres.</li></ol><div class="cta">CTA: "Directo del dueño, sin intermediarios"</div></div></article>
     <article class="reel"><div class="top"><span class="k">06 · Venta</span><h3>Lo que incluye</h3></div><div class="bd"><ol><li>Marco blanco que se dibuja alrededor de la lancha.</li><li>Lista con "+": capitán, ruta libre, sonido, chalecos, estacionamiento.</li><li>Precio en cyan al final.</li></ol><div class="cta">CTA: "Sin sorpresas. Pregunta por tu fecha"</div></div></article>
-    <article class="reel"><div class="top"><span class="k">07 · Confianza</span><h3>Reserva en 3 pasos</h3></div><div class="bd"><ol><li>1 · Escribe tu fecha y número de personas.</li><li>2 · Reserva con el 50% (Zelle, Bs o efectivo USD).</li><li>3 · Llega a la marina y zarpa.</li></ol><div class="cta">Nota: cambio de fecha dentro de 90 días</div></div></article>
+    <article class="reel"><div class="top"><span class="k">07 · Confianza</span><h3>Reserva en 3 pasos</h3></div><div class="bd"><ol><li>1 · Escribe tu fecha y número de personas.</li><li>2 · Reserva con el 50% (Zelle, Bs o efectivo USD).</li><li>3 · Llega a la marina, paga la tasa de USD 20 por vehículo y zarpa.</li></ol><div class="cta">Nota: cambio de fecha dentro de 90 días</div></div></article>
     <article class="reel"><div class="top"><span class="k">08 · Venta</span><h3>Puente a la vista</h3></div><div class="bd"><ol><li>Bloque de fecha grande con línea vertical (estilo póster).</li><li>"10 · 11 · 12 OCT" o la fecha del mes.</li><li>Lanchas disponibles (dato real del dueño).</li></ol><div class="cta">CTA: "Aparta tu lancha hoy"</div></div></article>
-    <article class="reel"><div class="top"><span class="k">09 · Venta</span><h3>Los cuatro hermanos</h3></div><div class="bd"><ol><li>Paneles divididos: Neptune, Nomad, Raid, Typhon.</li><li>"Cuatro Bayliner 160. Un precio: USD 190."</li><li>Ideal para parejas y grupos de hasta 5.</li></ol><div class="cta">CTA: "Elige la tuya por WhatsApp"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">09 · Venta</span><h3>Los cuatro hermanos</h3></div><div class="bd"><ol><li>Paneles divididos: Neptune, Nomad, Raid, Typhon.</li><li>"Cuatro Bayliner 160. Un precio: USD 240" (USD 320 en temporada alta).</li><li>Ideal para parejas y grupos de hasta 5.</li></ol><div class="cta">CTA: "Elige la tuya por WhatsApp"</div></div></article>
     <article class="reel"><div class="top"><span class="k">10 · Venta</span><h3>Andreita</h3></div><div class="bd"><ol><li>Nombre gigante a todo el ancho; la lancha recortada pasa por delante.</li><li>"Yamaha 230 · 8 personas."</li><li>Precio y capacidad en el módulo navy.</li></ol><div class="cta">CTA: "Para el grupo completo"</div></div></article>
     <article class="reel"><div class="top"><span class="k">11 · Confianza</span><h3>Preguntas de Morrocoy</h3></div><div class="bd"><ol><li>"¿Puedo llevar a mi perro?" No: norma de INPARQUES.</li><li>"¿Los niños pagan?" Desde 1 año cuentan como pasajeros.</li><li>"¿Y si cierran el parque?" Cambias la fecha sin costo.</li></ol><div class="cta">CTA: "¿Otra duda? Escribe INFO"</div></div></article>
     <article class="reel"><div class="top"><span class="k">12 · Comunidad</span><h3>Desde la marina</h3></div><div class="bd"><ol><li>Clip real de un cliente o del capitán dentro del marco de líneas.</li><li>Nombre de la lancha y fecha en tipografía fina.</li><li>"Gracias por navegar con nosotros."</li></ol><div class="cta">Fuente: clientes que etiquetan a la cuenta</div></div></article>
@@ -443,7 +451,7 @@ footer a{color:#fff}
         <div class="hd"><div class="av">RB</div><div><div class="nm">rentaboat · Morrocoy</div><div class="small">Alquiler de lanchas</div></div></div>
         <div class="bio">Lanchas en Morrocoy, directo del dueño ⚓
 Capitán incluido · Ruta libre por los cayos
-Desde USD 190 · Marina Puerto Varadero, Tucacas
+Desde USD 240 · Marina Puerto Varadero, Tucacas
 👇 Precios y reservas</div>
         <div class="lk">[web] · WhatsApp</div>
         <div class="hl"><div><i></i>Precios</div><div><i></i>Flota</div><div><i></i>Reservar</div><div><i></i>Pagos</div><div><i></i>Ruta</div><div><i></i>Clientes</div><div><i></i>Capitanes</div><div><i></i>Operadores</div></div>
@@ -453,7 +461,7 @@ Desde USD 190 · Marina Puerto Varadero, Tucacas
   </div>
 
   <div class="grid g2" style="margin-top:34px">
-    <div class="card"><h3>Web: calculadora de reserva</h3><p class="small" style="margin-top:6px">Añadir al borrador web un selector: número de personas → lancha recomendada → precio total y por persona → 50% para reservar → botón de WhatsApp con el mensaje prellenado ("Hola, somos 6 para el sábado 24 en Highlander"). Ningún competidor tiene esto. Es la prueba visible del "precio claro".</p></div>
+    <div class="card"><h3>Web: calculadora de reserva</h3><p class="small" style="margin-top:6px">Añadir al borrador web un selector: número de personas → lancha recomendada → temporada (baja/alta) → precio total y por persona + tasa de marina de USD 20 por vehículo → 50% para reservar → botón de WhatsApp con el mensaje prellenado ("Hola, somos 6 para el sábado 24 en Highlander"). Ningún competidor tiene esto. Es la prueba visible del "precio claro".</p></div>
     <div class="card"><h3>WhatsApp Business</h3><p class="small" style="margin-top:6px">Catálogo con las 6 lanchas y su precio, mensaje de bienvenida con las palabras clave, etiquetas (Nuevo · Cotizado · 50% pagado · Navegó) y una lista de difusión para clientes anteriores antes de cada puente.</p></div>
   </div>
 </div></section>
@@ -477,7 +485,15 @@ Desde USD 190 · Marina Puerto Varadero, Tucacas
       <li>El catálogo para operadores 2026 ya existe: actualizarlo cada temporada y enviarlo con la palabra OPERADOR.</li>
       <li>Destacada "Operadores" y una lista de difusión de WhatsApp solo para agencias.</li>
       <li>Un post mensual "para agencias" en LinkedIn o Facebook (opcional).</li>
-      <li>Definir con el dueño la tarifa neta o comisión y la regla de disponibilidad.</li>
+      <li>Tarifas para operadores (no se publican en el feed; van solo en el catálogo B2B):</li>
+    </ul>
+    <table class="tbl b2b" style="margin-top:8px;font-size:14px"><thead><tr><th>Lancha</th><th>Baja</th><th>Alta</th></tr></thead><tbody>
+      <tr><td>Neptune · Nomad · Raid · Typhon</td><td>USD 190</td><td>USD 260</td></tr>
+      <tr><td>Highlander</td><td>USD 210</td><td>USD 280</td></tr>
+      <tr><td>Andreita</td><td>USD 310</td><td>USD 380</td></tr>
+    </tbody></table>
+    <p class="small" style="margin-top:8px">El margen frente a la tarifa pública (USD 50 en baja, USD 60 en alta) es el incentivo del operador. La tasa de marina de USD 20 por vehículo aplica igual. Falta definir la regla de disponibilidad para agencias.</p>
+    <ul class="clean" style="display:none">
     </ul></div>
   </div>
 </div></section>
@@ -527,7 +543,7 @@ Desde USD 190 · Marina Puerto Varadero, Tucacas
       <li>Producir los reels 01 (precio) y 02 (capacidad).</li>
     </ul></div>
     <div class="card"><h3>Por confirmar con el cliente</h3><ul class="clean" style="margin-top:6px">
-      <li>¿Los precios públicos aplican todo el año o hay tarifa de temporada alta (diciembre, Carnaval, Semana Santa)?</li>
+      <li>¿Qué fechas exactas cubre la temporada alta en el calendario de Rentaboat?</li>
       <li>¿Cómo funciona el pasajero extra (USD 20) frente a la capacidad máxima?</li>
       <li>Año de inicio (para "19 años"), nombres y fotos de los capitanes.</li>
       <li>¿Siguen en flota Sr. Crab's, Travesura y FX4? ¿Sigue vigente "compra ahora, paga después"?</li>
