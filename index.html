@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rentaboat · Estrategia de Redes</title>
+<meta name="description" content="Estrategia de redes sociales de Rentaboat para destacar en Tucacas y el Parque Nacional Morrocoy. Preparada por GMDS Agency, octubre 2026.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#033760; --navy-2:#022a4a; --cyan:#1DB4DF; --white:#FFFFFF;
+  --bg:#FFFFFF; --soft:#F2F7FA; --ink:#0B2238; --muted:#526a7e; --line:#DCE6EE; --tint:#E6F5FB;
+  --head:"Jost","Avenir Next",system-ui,sans-serif; --body:"DM Sans",system-ui,sans-serif;
+  --max:1120px; --gut:clamp(16px,4vw,40px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+h1,h2,h3,h4{font-family:var(--head);font-weight:400;line-height:1.15;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(28px,4vw,40px);font-weight:300;color:var(--navy)}
+h3{font-size:21px;font-weight:500;color:var(--navy)}
+h4{font-size:16px;font-weight:600;color:var(--navy)}
+p{margin:0 0 12px}
+a{color:var(--navy)}
+.eyebrow{font-family:var(--head);text-transform:uppercase;letter-spacing:.24em;font-size:12px;font-weight:500;color:var(--cyan);margin-bottom:12px;display:block}
+.lead{font-size:19px;color:var(--muted);max-width:760px}
+small,.small{font-size:14px;color:var(--muted)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section.soft{background:var(--soft)}
+.sec-head{margin-bottom:32px;max-width:820px}
+.sec-head p{color:var(--muted);margin-top:10px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;height:58px}
+.brand{font-family:var(--head);font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);font-size:15px;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--cyan);font-weight:500}
+.nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a.l{font-size:14px;text-decoration:none;color:var(--muted);white-space:nowrap}
+.nav a.l:hover{color:var(--navy)}
+@media (max-width:820px){.nav ul{display:none}}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:88px 0 76px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 120px),
+  radial-gradient(900px 400px at 85% 120%,rgba(29,180,223,.35),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(40px,7vw,78px);font-weight:300;letter-spacing:-.02em;max-width:900px}
+.hero h1 em{font-style:normal;color:var(--cyan)}
+.hero .lead{color:rgba(255,255,255,.82);margin-top:22px}
+.meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;font-size:14px;color:rgba(255,255,255,.7)}
+.meta span b{color:#fff;font-weight:500}
+.frame{border:1px solid rgba(255,255,255,.35);border-radius:16px;padding:22px 24px;margin-top:40px;max-width:760px}
+.frame .eyebrow{margin-bottom:6px}
+.frame p{font-family:var(--head);font-size:22px;font-weight:300;margin:0}
+
+/* grids & cards */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.soft .card{background:#fff}
+.card.navy{background:var(--navy);color:#fff;border-color:var(--navy)}
+.card.navy h3,.card.navy h4{color:#fff}
+.card.navy .small,.card.navy small{color:rgba(255,255,255,.75)}
+.num{font-family:var(--head);font-size:44px;font-weight:300;color:var(--navy);line-height:1}
+.card.navy .num{color:var(--cyan)}
+.tag{display:inline-block;font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--tint);color:var(--navy)}
+.tag.c{background:var(--cyan);color:var(--navy-2)}
+.insight{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:20px 0;border-bottom:1px solid var(--line)}
+.insight:last-child{border-bottom:0}
+.insight .n{font-family:var(--head);font-size:30px;font-weight:300;color:var(--cyan);line-height:1}
+.insight h4{margin-bottom:6px}
+.insight .so{margin-top:8px;font-size:15px;color:var(--navy);background:var(--tint);border-left:3px solid var(--cyan);padding:8px 12px;border-radius:0 8px 8px 0}
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{padding:7px 0 7px 22px;position:relative}
+ul.clean li:before{content:"+";position:absolute;left:0;color:var(--cyan);font-weight:700}
+
+/* tables */
+.tbl{width:100%;border-collapse:collapse;font-size:15px}
+.tbl th{font-family:var(--head);font-weight:500;text-align:left;color:var(--navy);border-bottom:2px solid var(--navy);padding:10px 10px;white-space:nowrap}
+.mkt td:first-child{white-space:nowrap}
+.tbl td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl tr.me td{background:var(--tint);font-weight:500}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;background:#fff}
+.scroll .tbl{min-width:860px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.on{background:#1DB4DF}.off{background:#b8c6d2}
+
+/* price strip */
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid var(--navy);border-radius:16px;overflow:hidden}
+.price{padding:22px;border-right:1px solid var(--line)}
+.price:last-child{border-right:0}
+.price .boat{font-family:var(--head);font-size:22px;color:var(--navy);text-transform:uppercase;letter-spacing:.04em}
+.price .model{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.price .usd{font-family:var(--head);font-size:40px;font-weight:300;color:var(--navy);margin-top:10px}
+.price .usd span{color:var(--cyan)}
+.price .pp{font-size:14px;color:var(--muted)}
+
+/* map 2x2 */
+.quad{position:relative;aspect-ratio:1.5/1;border:1px solid var(--line);border-radius:14px;background:
+ linear-gradient(var(--line),var(--line)) center/1px 100% no-repeat,linear-gradient(var(--line),var(--line)) center/100% 1px no-repeat,#fff}
+.quad .ax{position:absolute;font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.quad .pt{position:absolute;transform:translate(-50%,-50%);font-size:12px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.quad .pt.me{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:500}
+.quad .zone{position:absolute;right:3%;top:5%;width:44%;height:40%;border:1.5px dashed var(--cyan);border-radius:12px}
+@media (max-width:560px){.quad{aspect-ratio:1/1.05}.quad .pt{font-size:10.5px;padding:2px 6px}}
+
+/* pillars bar */
+.bar{display:flex;height:46px;border-radius:12px;overflow:hidden;margin:8px 0 22px}
+.bar div{display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden}
+.p1{background:#033760}.p2{background:#1DB4DF;color:#022a4a!important}.p3{background:#4f7da3}.p4{background:#9fd9ec;color:#022a4a!important}
+
+/* calendar */
+.cal{display:grid;grid-template-columns:110px repeat(4,1fr);gap:8px;min-width:760px}
+.cal .h{font-family:var(--head);font-weight:500;color:var(--navy);font-size:14px;padding:6px 4px}
+.cal .d{font-family:var(--head);font-weight:500;color:var(--muted);font-size:14px;padding:12px 4px}
+.cal .c{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13.5px;line-height:1.4}
+.cal .c b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:3px}
+.calwrap{overflow-x:auto;padding-bottom:6px}
+
+/* reels */
+.reel{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.reel .top{background:var(--navy);color:#fff;padding:18px 20px;position:relative}
+.reel .top .k{font-size:12px;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase}
+.reel .top h3{color:#fff;font-size:24px;font-weight:500;text-transform:uppercase;letter-spacing:.02em;margin-top:6px}
+.reel .bd{padding:16px 20px 20px;font-size:15px}
+.reel ol{margin:6px 0 10px;padding-left:18px}
+.reel ol li{margin:3px 0}
+.reel .cta{font-size:13.5px;color:var(--navy);background:var(--tint);padding:7px 10px;border-radius:8px}
+
+/* keywords */
+.kw{display:grid;grid-template-columns:150px 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.kw > div{padding:14px 16px;border-bottom:1px solid var(--line)}
+.kw > div:nth-last-child(-n+2){border-bottom:0}
+.kw .w{font-family:var(--head);font-weight:600;color:var(--navy);letter-spacing:.08em;background:var(--tint)}
+@media (max-width:560px){.kw{grid-template-columns:1fr}.kw > div:nth-last-child(2){border-bottom:1px solid var(--line)}}
+
+/* phone bio */
+.phone{max-width:360px;border:1px solid var(--line);border-radius:28px;padding:22px;background:#fff;margin:0 auto}
+.phone .hd{display:flex;gap:14px;align-items:center}
+.phone .av{width:64px;height:64px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;color:var(--cyan);font-family:var(--head);font-size:13px;letter-spacing:.12em}
+.phone .nm{font-weight:700;font-size:15px}
+.phone .bio{font-size:14px;margin-top:12px;line-height:1.5;white-space:pre-line}
+.phone .lk{color:#1a5fa0;font-size:14px;font-weight:500}
+.hl{display:flex;gap:12px;margin-top:16px;overflow-x:auto;padding-bottom:4px}
+.hl div{text-align:center;font-size:11px;min-width:56px}
+.hl i{display:block;width:52px;height:52px;border-radius:50%;border:1.5px solid var(--line);margin:0 auto 4px;background:var(--navy);position:relative}
+.hl i:after{content:"";position:absolute;inset:16px;border:1.5px solid var(--cyan);border-radius:4px}
+
+.timeline{border-left:2px solid var(--cyan);padding-left:20px;margin-left:6px}
+.timeline .it{position:relative;padding:0 0 18px}
+.timeline .it:before{content:"";position:absolute;left:-27px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--navy)}
+.timeline .it b{font-family:var(--head);font-weight:500;color:var(--navy)}
+
+footer{background:var(--navy);color:rgba(255,255,255,.75);padding:44px 0;font-size:14px}
+footer a{color:#fff}
+.src li{margin:4px 0;word-break:break-word}
+.note{font-size:13.5px;color:var(--muted);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin-top:16px}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="#top">Rent<b>a</b>boat · Estrategia</a>
+  <ul>
+    <li><a class="l" href="#mercado">Mercado</a></li>
+    <li><a class="l" href="#posicion">Posicionamiento</a></li>
+    <li><a class="l" href="#pilares">Pilares</a></li>
+    <li><a class="l" href="#calendario">Calendario</a></li>
+    <li><a class="l" href="#reels">Reels</a></li>
+    <li><a class="l" href="#conversion">Conversión</a></li>
+    <li><a class="l" href="#ads">Anuncios</a></li>
+    <li><a class="l" href="#kpis">KPIs</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <span class="eyebrow">Estrategia de redes sociales · Octubre 2026</span>
+  <h1>Morrocoy, <em>con precio claro</em>.</h1>
+  <p class="lead">Cómo Rentaboat se diferencia entre decenas de operadores de lanchas en Tucacas: precio visible, trato directo con el dueño, capitán que conoce el parque y una imagen que ninguna otra cuenta tiene.</p>
+  <div class="frame">
+    <span class="eyebrow">La idea en una línea</span>
+    <p>Mientras todos responden "escríbenos para cotizar", Rentaboat muestra el precio, la lancha y la ruta antes del primer mensaje.</p>
+  </div>
+  <div class="meta">
+    <span><b>Cliente</b> · Rentaboat, Marina Puerto Varadero, Tucacas</span>
+    <span><b>Preparado por</b> · GMDS Agency</span>
+    <span><b>Datos de mercado</b> · leídos el 7 oct 2026</span>
+  </div>
+</div></header>
+
+<!-- RESUMEN -->
+<section id="resumen"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Resumen</span><h2>Lo esencial en cinco puntos</h2></div>
+  <div class="grid g3">
+    <div class="card"><div class="num">0</div><h4 style="margin-top:10px">operadores activos con tabla de precios pública</h4><p class="small">Revisamos 14 cuentas de Tucacas y Morrocoy. En las activas, el precio solo se da por WhatsApp o DM.</p></div>
+    <div class="card"><div class="num">0</div><h4 style="margin-top:10px">cuentas con motion graphics o sistema visual</h4><p class="small">Todo el nicho publica video crudo, fotos de clientes y diseños sueltos. Un look de marca consistente se nota desde el primer scroll.</p></div>
+    <div class="card"><div class="num">3 de 4</div><h4 style="margin-top:10px">cuentas medianas están dormidas</h4><p class="small">Entre las 4 cuentas de 19K a 30K seguidores, 3 llevan entre 45 días y 13 meses sin publicar. Con 16 piezas al mes y una historia diaria, Rentaboat publica tanto como el líder desde el primer mes.</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card navy"><h3>Posicionamiento</h3><p style="margin-top:8px">"Directo del dueño, con precio claro": alquiler sin intermediarios, 19+ años, capitán incluido y ruta libre por el parque, con el precio a la vista en cada pieza.</p></div>
+    <div class="card navy"><h3>Motor de conversión</h3><p style="margin-top:8px">Reels en motion graphics que enseñan precio y capacidad, palabras clave por DM y WhatsApp, una calculadora en la web y anuncios a WhatsApp antes de cada puente.</p></div>
+  </div>
+</div></section>
+
+<!-- MERCADO -->
+<section class="soft" id="mercado"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">01 · Mercado</span><h2>Quién vende lanchas en Tucacas y Morrocoy</h2>
+  <p>Datos leídos de cada perfil de Instagram el 7 de octubre de 2026 (12 publicaciones más recientes). "Activa" = publicó en los últimos 30 días.</p></div>
+
+  <div class="scroll">
+  <table class="tbl mkt">
+    <thead><tr><th>Cuenta</th><th>Seguidores</th><th>Último post</th><th>Posts 30 d</th><th>Precio visible</th><th>Cómo reserva</th><th>Con qué compite</th></tr></thead>
+    <tbody>
+      <tr><td><span class="dot on"></span>@tulanchamorrocoy</td><td>245K</td><td>4 oct</td><td>9</td><td>No</td><td>Web + formulario</td><td>Oficina física (Morrocoy y Florida), flota grande, hospedaje, catering, foto/video</td></tr>
+      <tr><td><span class="dot on"></span>@inflabeach</td><td>66.2K</td><td>5 oct</td><td>5</td><td>No</td><td>WhatsApp</td><td>Experiencia: inflables, paddle, WiFi Starlink. Reels de hasta 4.5M vistas</td></tr>
+      <tr><td><span class="dot on"></span>@rentalancha</td><td>43.2K</td><td>29 sep</td><td>12</td><td>No</td><td>Catálogo Canva</td><td>Fotos de clientes ("Clientes VIP"), pagos con Binance</td></tr>
+      <tr><td><span class="dot on"></span>@tucacasboat</td><td>34.4K</td><td>29 sep</td><td>7</td><td>No</td><td>WhatsApp</td><td>Full day VIP, eventos privados, hospedaje</td></tr>
+      <tr><td><span class="dot off"></span>@lanchasvip</td><td>29.3K</td><td>13 may</td><td>0</td><td>No</td><td>WhatsApp</td><td>"Capitán, combustible y música incluidos". Sin publicar en 5 meses</td></tr>
+      <tr><td><span class="dot off"></span>@yatestucacas</td><td>26.5K</td><td>23 ago</td><td>0</td><td>Solo en 2023</td><td>WhatsApp</td><td>VIP, wakeboard. En 2023 publicó "desde 180$ todo el día"</td></tr>
+      <tr><td><span class="dot on"></span>@tuyatemorrocoy</td><td>24.9K</td><td>4 oct</td><td>4</td><td>No</td><td>Formulario web</td><td>"Somos empresa, RIF, oficina comercial"; helicóptero</td></tr>
+      <tr><td><span class="dot off"></span>@lanchastucacasvl</td><td>19.2K</td><td>10 sep 2025</td><td>0</td><td>No</td><td>WhatsApp</td><td>Usa "¡Tu mejor opción!". Sin publicar en 13 meses</td></tr>
+      <tr><td><span class="dot on"></span>@navegaabordomorrocoy</td><td>10.5K</td><td>16 sep</td><td>1</td><td>No ("cotiza")</td><td>WhatsApp</td><td>Yate hasta 11 personas, marina privada</td></tr>
+      <tr><td><span class="dot on"></span>@lanchasenmorrocoy</td><td>6,038</td><td>6 oct</td><td>3</td><td>No</td><td>Linktree</td><td>"Más de 16 años de experiencia" + hospedaje</td></tr>
+      <tr><td><span class="dot on"></span>@altamarea_vzla</td><td>3,712</td><td>4 oct</td><td>~8</td><td>No</td><td>WhatsApp</td><td>Yate Sea Ray 42', colaboraciones con moda</td></tr>
+      <tr><td><span class="dot on"></span>@tulancha_tucacas</td><td>2,954</td><td>5 oct</td><td>8</td><td>No</td><td>WhatsApp</td><td>Vende por capacidad: "¿Son 7, 8, 10 o 12?"</td></tr>
+      <tr><td><span class="dot on"></span>@unstoppable.morrocoy</td><td>112</td><td>21 sep</td><td>1</td><td>No</td><td>WhatsApp</td><td>Dueño con una lancha: música, cava, marinero</td></tr>
+      <tr><td><span class="dot off"></span>@tucacas.lanchas</td><td>233</td><td>30 mar</td><td>0</td><td>No</td><td>WhatsApp</td><td>"Te cuadramos la rumba"</td></tr>
+      <tr class="me"><td>Rentaboat</td><td colspan="6" style="white-space:normal">Cuenta @rentaboat.ve no encontrada en Instagram el 7 oct. Activos: flota propia de 6 lanchas con precio fijo, 19+ años, marina con estacionamiento vigilado, web en borrador.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="small" style="margin-top:10px">También aparecen cuentas abandonadas (@lanchas_tucacas, @alquilo_lancha, @tulanchamorrocoy.ve, @paseos_morrocoy) y webs con precios desactualizados. En GetMyBoat no aparece ninguna lancha en Tucacas.</p>
+
+  <div class="grid g2" style="margin-top:40px;align-items:start">
+    <div>
+      <h3 style="margin-bottom:6px">Cinco hallazgos que definen la estrategia</h3>
+      <div class="insight"><div class="n">1</div><div><h4>El precio vive en el DM</h4><p class="small">Ninguna cuenta activa publica una tabla de precios. Lo único parecido fue "desde 180$ todo el día" de @yatestucacas, en 2023.</p><div class="so">Para Rentaboat: el precio es el mensaje. USD 190 · 210 · 340 en cada pieza de venta.</div></div></div>
+      <div class="insight"><div class="n">2</div><div><h4>Las vistas las ganan los reels de "escape"</h4><p class="small">@inflabeach: 381K vistas (3 sep 2026) y 317K (16 ene 2026) con ganchos como "¿y si llegamos de repente a un lugar así?" o "Entre semana es otro nivel". Todo es video crudo.</p><div class="so">Motion graphics con 2-4 s de agua real: la emoción del paisaje con un formato que nadie más usa.</div></div></div>
+      <div class="insight"><div class="n">3</div><div><h4>Se compite en confianza</h4><p class="small">"Oficina física", "somos empresa, RIF", "16 años de experiencia", destacadas de PAGOS en casi todas las cuentas.</p><div class="so">Rentaboat tiene lo que nadie puede copiar: dueño directo, 19+ años, flota propia y marina privada. Hay que decirlo y mostrarlo.</div></div></div>
+      <div class="insight"><div class="n">4</div><div><h4>Todos se llaman y suenan igual</h4><p class="small">TuLancha, Tu Lancha Morrocoy, Lanchas Tucacas, Lanchas VIP... y "Tu mejor opción" ya lo usa @lanchastucacasvl.</p><div class="so">Dejar "Tu mejor opción para Morrocoy" como frase de apoyo y adoptar una promesa propia.</div></div></div>
+      <div class="insight"><div class="n">5</div><div><h4>La competencia vende paquetes, no lanchas</h4><p class="small">Starlink, inflables, catering, fotografía, decoración, hospedaje, hasta helicóptero.</p><div class="so">Alianzas con posadas, fotógrafos y comida en vez de ampliar la operación (ver Colaboraciones).</div></div></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:12px">Dónde está el espacio libre</h3>
+      <div class="quad" role="img" aria-label="Mapa de posicionamiento: eje horizontal precio visible, eje vertical calidad visual. Rentaboat ocupa solo la esquina de precio visible y look premium.">
+        <span class="ax" style="left:3%;bottom:3%">Precio al DM</span>
+        <span class="ax" style="right:3%;bottom:3%">Precio visible</span>
+        <span class="ax" style="left:3%;top:3%">Look premium</span>
+        <span class="ax" style="left:3%;top:52%">Look casero</span>
+        <div class="zone"></div>
+        <span class="pt" style="left:22%;top:30%">@tulanchamorrocoy</span>
+        <span class="pt" style="left:30%;top:42%">@inflabeach</span>
+        <span class="pt" style="left:20%;top:62%">@tucacasboat</span>
+        <span class="pt" style="left:30%;top:74%">@rentalancha</span>
+        <span class="pt" style="left:18%;top:86%">@tulancha_tucacas</span>
+        <span class="pt" style="left:62%;top:80%">@yatestucacas (2023)</span>
+        <span class="pt me" style="left:74%;top:24%">Rentaboat</span>
+      </div>
+      <p class="small" style="margin-top:10px">Ubicación cualitativa según el feed revisado. La esquina superior derecha (precio visible y look premium) está vacía.</p>
+
+      <h3 style="margin:30px 0 10px">Quién viaja y cuándo</h3>
+      <ul class="clean">
+        <li><b>Origen:</b> Valencia (~1.5 h), Maracay, Caracas (3.5-4 h) y Barquisimeto. Gran parte llega en carro y decide en la semana previa al fin de semana.</li>
+        <li><b>Picos:</b> puentes y feriados, diciembre-enero, Carnaval, Semana Santa y vacaciones escolares de julio-agosto. Entre semana el parque está más tranquilo, y eso también se puede vender.</li>
+        <li><b>Pagos:</b> Zelle, bolívares a tasa del día y efectivo USD. La competencia destaca sus métodos de pago en una historia destacada; @rentalancha suma Binance.</li>
+        <li><b>Mar en calma:</b> la temporada seca (dic-abr) tiene mar más tranquilo y mejor visibilidad para snorkel.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- POSICIONAMIENTO -->
+<section id="posicion"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">02 · Posicionamiento</span><h2>Directo del dueño, con precio claro</h2>
+  <p>Elegimos la transparencia porque es el único territorio vacío del mercado, porque reduce la fricción para quien planifica desde Caracas o Valencia, y porque solo un dueño directo con tarifa fija puede sostenerla. Un intermediario no puede publicar un precio que no controla.</p></div>
+
+  <div class="prices" aria-label="Tarifas públicas Rentaboat">
+    <div class="price"><div class="boat">Neptune · Nomad · Raid · Typhon</div><div class="model">Bayliner 160 · 5 personas</div><div class="usd"><span>USD</span> 190</div><div class="pp">USD 38 por persona con lancha completa</div></div>
+    <div class="price"><div class="boat">Highlander</div><div class="model">Bayliner 180 · 6 personas</div><div class="usd"><span>USD</span> 210</div><div class="pp">USD 35 por persona con lancha completa</div></div>
+    <div class="price"><div class="boat">Andreita</div><div class="model">Yamaha 230 · 8 personas</div><div class="usd"><span>USD</span> 340</div><div class="pp">USD 42.50 por persona con lancha completa</div></div>
+  </div>
+  <p class="small" style="margin-top:10px">Incluye capitán, salida desde Marina Puerto Varadero con estacionamiento vigilado, ruta libre dentro del Parque Nacional Morrocoy, sonido Bluetooth y chalecos. Lunes a domingo, 9:00 a 5:00.</p>
+
+  <div class="grid g4" style="margin-top:34px">
+    <div class="card"><span class="tag c">Prueba 1</span><h4 style="margin-top:12px">Precio claro</h4><p class="small">Precio por lancha y por persona en cada pieza de venta, en la bio y en la web. Las condiciones también se publican: 50% para reservar, cambio de fecha dentro de 90 días.</p></div>
+    <div class="card"><span class="tag c">Prueba 2</span><h4 style="margin-top:12px">Directo del dueño</h4><p class="small">19+ años, flota propia, sin comisiones de intermediarios y respuesta directa si surge un imprevisto. Mostrar al dueño y la flota real.</p></div>
+    <div class="card"><span class="tag c">Prueba 3</span><h4 style="margin-top:12px">Capitán que conoce Morrocoy</h4><p class="small">Ruta libre armada con el capitán: cayos, bajos y horarios según el mar del día. El capitán es la cara del servicio.</p></div>
+    <div class="card"><span class="tag c">Prueba 4</span><h4 style="margin-top:12px">Imagen premium</h4><p class="small">Reels 100% motion graphics en navy, cyan y blanco. Un sistema visual que se reconoce sin leer el nombre.</p></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:28px">
+    <div class="card"><h4>Frase de marca (propuestas)</h4>
+      <ul class="clean" style="margin-top:6px">
+        <li><b>Morrocoy, con precio claro.</b> (recomendada)</li>
+        <li>Directo del dueño, directo al cayo.</li>
+        <li>Tu lancha en Morrocoy, sin intermediarios.</li>
+      </ul>
+      <p class="small" style="margin-top:8px">"Tu mejor opción para Morrocoy" queda como cierre secundario, no como firma.</p></div>
+    <div class="card"><h4>Tono</h4>
+      <p class="small">Seguro, cercano y profesional. Frases cortas, cifras concretas y nada de exageración. Siempre: seguridad, comodidad y facilidad para reservar. Las palabras restringidas del manual de marca no se usan en ninguna pieza ni anuncio.</p>
+      <p class="small"><b>Sí:</b> "Precio por lancha, capitán incluido." · "Reserva con el 50%." · "Tú eliges la ruta, el capitán la conoce."</p></div>
+  </div>
+</div></section>
+
+<!-- PILARES -->
+<section class="soft" id="pilares"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">03 · Pilares de contenido</span><h2>Qué publicamos y en qué proporción</h2>
+  <p>16 piezas de feed al mes: 11 reels en motion graphics y 5 diseños (carruseles o posts), más una historia diaria.</p></div>
+  <div class="bar" role="img" aria-label="Mezcla: Venta 35%, Morrocoy 30%, Confianza 20%, Comunidad 15%">
+    <div class="p1" style="width:35%">Venta 35%</div><div class="p2" style="width:30%">Morrocoy 30%</div><div class="p3" style="width:20%">Confianza 20%</div><div class="p4" style="width:15%">Comunidad 15%</div>
+  </div>
+  <div class="grid g4">
+    <div class="card"><span class="tag">6 piezas / mes</span><h3 style="margin-top:10px">Venta</h3><p class="small">Flota y precio, "¿cuántos son?", ofertas de temporada, fechas disponibles en puentes. Siempre con precio y CTA a WhatsApp.</p></div>
+    <div class="card"><span class="tag">5 piezas / mes</span><h3 style="margin-top:10px">Morrocoy</h3><p class="small">Cayos, agua, rutas, atardecer de regreso, el día en 15 segundos. Inspiración que termina con la lancha en cuadro.</p></div>
+    <div class="card"><span class="tag">3 piezas / mes</span><h3 style="margin-top:10px">Confianza</h3><p class="small">Cómo reservar, qué incluye, reglas del parque (sin mascotas, chalecos), 19 años, el dueño, los capitanes, la marina.</p></div>
+    <div class="card"><span class="tag">2 piezas / mes</span><h3 style="margin-top:10px">Comunidad</h3><p class="small">Clientes (UGC), trivia de cayos, encuestas, "¿con quién vienes?". Reels de clientes reeditados con el marco de marca.</p></div>
+  </div>
+</div></section>
+
+<!-- CALENDARIO -->
+<section id="calendario"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">04 · Calendario</span><h2>Plantilla mensual: 16 feed + 1 historia al día</h2>
+  <p>Los fines de semana se planifican de martes a jueves. Por eso la venta sale a mitad de semana y la inspiración el domingo, cuando la gente piensa en el próximo viaje.</p></div>
+  <div class="calwrap"><div class="cal">
+    <div class="h"></div><div class="h">Semana 1</div><div class="h">Semana 2</div><div class="h">Semana 3</div><div class="h">Semana 4</div>
+    <div class="d">Martes</div>
+    <div class="c"><b>Reel · Venta</b>"El precio que nadie te dice": flota completa</div>
+    <div class="c"><b>Reel · Venta</b>"¿Cuántos son?" capacidad y precio por persona</div>
+    <div class="c"><b>Reel · Venta</b>Ficha de una lancha (Andreita / Highlander)</div>
+    <div class="c"><b>Reel · Venta</b>Puente o fecha especial del mes</div>
+    <div class="d">Jueves</div>
+    <div class="c"><b>Reel · Morrocoy</b>Ruta libre: mapa animado de cayos</div>
+    <div class="c"><b>Reel · Morrocoy</b>Tu día en 15 segundos (9:00 a 5:00)</div>
+    <div class="c"><b>Reel · Morrocoy</b>Cayo del mes</div>
+    <div class="c"><b>Reel · Morrocoy</b>Entre semana / temporada tranquila</div>
+    <div class="d">Viernes</div>
+    <div class="c"><b>Carrusel · Confianza</b>Reserva en 3 pasos + pagos</div>
+    <div class="c"><b>Reel · Confianza</b>19 años, directo del dueño</div>
+    <div class="c"><b>Carrusel · Confianza</b>Qué incluye / reglas del parque</div>
+    <div class="c"><b>Reel · Venta</b>"Lo que incluye tu lancha" (checklist)</div>
+    <div class="d">Domingo</div>
+    <div class="c"><b>Post · Comunidad</b>Clientes del finde (UGC con marco)</div>
+    <div class="c"><b>Diseño · Morrocoy</b>Foto drone + frase grande</div>
+    <div class="c"><b>Reel · Comunidad</b>Reel de clientes reeditado</div>
+    <div class="c"><b>Diseño · Venta</b>Tabla de precios del mes</div>
+  </div></div>
+
+  <div class="grid g2" style="margin-top:34px">
+    <div class="card"><h3>Historias: rutina diaria</h3>
+      <ul class="clean" style="margin-top:6px">
+        <li><b>Lunes:</b> lanchas disponibles esta semana (solo datos reales del dueño).</li>
+        <li><b>Martes:</b> pregunta frecuente con caja de preguntas.</li>
+        <li><b>Miércoles:</b> lancha del día con precio + sticker de enlace a WhatsApp.</li>
+        <li><b>Jueves:</b> encuesta "¿qué cayo prefieres?" o quiz de Morrocoy.</li>
+        <li><b>Viernes:</b> "¿Ya tienes lancha para el finde?" + palabra clave MORROCOY.</li>
+        <li><b>Sábado:</b> clips en vivo desde la marina o la lancha (enviados por el capitán).</li>
+        <li><b>Domingo:</b> repost de clientes etiquetados → destacada Clientes.</li>
+      </ul></div>
+    <div class="card"><h3>Fechas clave (Venezuela)</h3>
+      <div class="timeline" style="margin-top:10px">
+        <div class="it"><b>10-12 oct 2026</b> · Puente por el feriado del lunes 12 (Día de la Resistencia Indígena). Es este fin de semana: historias y anuncio desde ya.</div>
+        <div class="it"><b>24-26 oct</b> · Lunes bancario 26 (San José Gregorio Hernández).</div>
+        <div class="it"><b>21-23 nov</b> · Lunes bancario 23 (Virgen del Rosario de Chiquinquirá).</div>
+        <div class="it"><b>12-14 dic</b> · Lunes bancario 14 (Inmaculada Concepción). Arranca la temporada alta.</div>
+        <div class="it"><b>24-27 dic y 31 dic-3 ene</b> · Feriados jueves 24, viernes 25, jueves 31 y viernes 1.</div>
+        <div class="it"><b>8-9 feb 2027</b> · Carnaval. <b>25-26 mar 2027</b> · Semana Santa. Verificar con el calendario oficial 2027.</div>
+      </div>
+      <p class="small">Los lunes bancarios cierran la banca, pero no son feriados nacionales: sirven para un mensaje suave de "fin de semana largo". Cada fecha fuerte lleva su reel tres semanas antes y anuncios en los 10 días previos.</p></div>
+  </div>
+</div></section>
+
+<!-- REELS -->
+<section class="soft" id="reels"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">05 · Reels en motion graphics</span><h2>12 conceptos listos para guion</h2>
+  <p>Formato del perfil de cliente: 12-20 s, gancho tipográfico en 0-1.5 s, revelación del nombre de la lancha, datos animados (precio en cyan, capacidad, incluidos) y cierre con WhatsApp y el logo. Recomendación: 2-4 s de agua o cayo reales dentro de cada reel.</p></div>
+  <div class="grid g3">
+    <article class="reel"><div class="top"><span class="k">01 · Venta</span><h3>El precio que nadie te dice</h3></div><div class="bd"><ol><li>Texto "¿CUÁNTO CUESTA UNA LANCHA EN MORROCOY?" sobre el agua.</li><li>Tres paneles: Bayliner 160 · 180 · Yamaha 230.</li><li>Los precios suben con conteo: 190 · 210 · 340.</li></ol><div class="cta">CTA: "Escribe MORROCOY y te mandamos disponibilidad"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">02 · Venta</span><h3>¿Cuántos son?</h3></div><div class="bd"><ol><li>Contador de personas que salta 5 → 6 → 8.</li><li>Cada número revela su lancha.</li><li>Cierre con precio por persona: 38 · 35 · 42.50.</li></ol><div class="cta">CTA: "Dinos cuántos son por WhatsApp"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">03 · Morrocoy</span><h3>Tu día en 15 segundos</h3></div><div class="bd"><ol><li>Reloj 9:00: salida desde la marina, estacionamiento vigilado.</li><li>Línea de tiempo por cayos con clips cortos.</li><li>5:00: regreso con el atardecer.</li></ol><div class="cta">CTA: "Reserva tu fecha con el 50%"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">04 · Morrocoy</span><h3>Ruta libre</h3></div><div class="bd"><ol><li>El mapa del parque se dibuja con líneas finas.</li><li>Pines de cayos cerca de Tucacas (Sombrero, Muerto, Los Juanes, Boca Seca...).</li><li>"Tú eliges, el capitán conoce el camino."</li></ol><div class="cta">Validar la lista de cayos con el capitán</div></div></article>
+    <article class="reel"><div class="top"><span class="k">05 · Confianza</span><h3>19 años</h3></div><div class="bd"><ol><li>Contador 2007 → 2026 (confirmar año de inicio).</li><li>"Una sola flota. Un solo dueño."</li><li>Las 6 lanchas en cuadrícula con sus nombres.</li></ol><div class="cta">CTA: "Directo del dueño, sin intermediarios"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">06 · Venta</span><h3>Lo que incluye</h3></div><div class="bd"><ol><li>Marco blanco que se dibuja alrededor de la lancha.</li><li>Lista con "+": capitán, ruta libre, sonido, chalecos, estacionamiento.</li><li>Precio en cyan al final.</li></ol><div class="cta">CTA: "Sin sorpresas. Pregunta por tu fecha"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">07 · Confianza</span><h3>Reserva en 3 pasos</h3></div><div class="bd"><ol><li>1 · Escribe tu fecha y número de personas.</li><li>2 · Reserva con el 50% (Zelle, Bs o efectivo USD).</li><li>3 · Llega a la marina y zarpa.</li></ol><div class="cta">Nota: cambio de fecha dentro de 90 días</div></div></article>
+    <article class="reel"><div class="top"><span class="k">08 · Venta</span><h3>Puente a la vista</h3></div><div class="bd"><ol><li>Bloque de fecha grande con línea vertical (estilo póster).</li><li>"10 · 11 · 12 OCT" o la fecha del mes.</li><li>Lanchas disponibles (dato real del dueño).</li></ol><div class="cta">CTA: "Aparta tu lancha hoy"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">09 · Venta</span><h3>Los cuatro hermanos</h3></div><div class="bd"><ol><li>Paneles divididos: Neptune, Nomad, Raid, Typhon.</li><li>"Cuatro Bayliner 160. Un precio: USD 190."</li><li>Ideal para parejas y grupos de hasta 5.</li></ol><div class="cta">CTA: "Elige la tuya por WhatsApp"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">10 · Venta</span><h3>Andreita</h3></div><div class="bd"><ol><li>Nombre gigante a todo el ancho; la lancha recortada pasa por delante.</li><li>"Yamaha 230 · 8 personas."</li><li>Precio y capacidad en el módulo navy.</li></ol><div class="cta">CTA: "Para el grupo completo"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">11 · Confianza</span><h3>Preguntas de Morrocoy</h3></div><div class="bd"><ol><li>"¿Puedo llevar a mi perro?" No: norma de INPARQUES.</li><li>"¿Los niños pagan?" Desde 1 año cuentan como pasajeros.</li><li>"¿Y si cierran el parque?" Cambias la fecha sin costo.</li></ol><div class="cta">CTA: "¿Otra duda? Escribe INFO"</div></div></article>
+    <article class="reel"><div class="top"><span class="k">12 · Comunidad</span><h3>Desde la marina</h3></div><div class="bd"><ol><li>Clip real de un cliente o del capitán dentro del marco de líneas.</li><li>Nombre de la lancha y fecha en tipografía fina.</li><li>"Gracias por navegar con nosotros."</li></ol><div class="cta">Fuente: clientes que etiquetan a la cuenta</div></div></article>
+  </div>
+
+  <h3 style="margin:44px 0 12px">Banco de ganchos (primer segundo)</h3>
+  <div class="grid g3">
+    <div class="card"><ul class="clean">
+      <li>¿Cuánto cuesta una lancha en Morrocoy?</li>
+      <li>El precio que nadie publica.</li>
+      <li>¿Son 5, 6 u 8?</li>
+      <li>Morrocoy te espera este puente.</li>
+    </ul></div>
+    <div class="card"><ul class="clean">
+      <li>¿Plan para el finde?</li>
+      <li>De la marina al cayo en minutos.</li>
+      <li>Tú eliges la ruta. Él conoce el mar.</li>
+      <li>19 años navegando Morrocoy.</li>
+    </ul></div>
+    <div class="card"><ul class="clean">
+      <li>Lo que incluye tu lancha (todo).</li>
+      <li>Reserva con el 50%. Así de fácil.</li>
+      <li>Entre semana, Morrocoy es otro mar.</li>
+      <li>¿Cuál es tu cayo?</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<!-- CONVERSION -->
+<section id="conversion"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">06 · Conversión</span><h2>Del reel a la reserva</h2>
+  <p>Cada pieza termina en una palabra clave. La respuesta automática entrega precio, disponibilidad y el siguiente paso, y el dueño cierra en WhatsApp.</p></div>
+  <div class="grid g2" style="align-items:start">
+    <div>
+      <h3 style="margin-bottom:12px">Palabras clave (DM y WhatsApp)</h3>
+      <div class="kw">
+        <div class="w">MORROCOY</div><div>Tabla de precios + enlace a la web + "¿qué fecha y cuántas personas?"</div>
+        <div class="w">FECHA</div><div>Pide fecha y número de personas; pasa a WhatsApp con el mensaje prellenado.</div>
+        <div class="w">GRUPO</div><div>Grupos de más de 8: combinar dos lanchas (ej. Andreita + Highlander).</div>
+        <div class="w">PAGO</div><div>Métodos (Zelle, Bs a tasa del día, efectivo USD), 50% de reserva y política de cambio de fecha.</div>
+        <div class="w">INFO</div><div>Qué incluye, reglas del parque, horario 9:00-5:00, ubicación de la marina.</div>
+        <div class="w">OPERADOR</div><div>Catálogo para agencias y operadores turísticos (ver B2B).</div>
+      </div>
+      <p class="note">Se configura con las respuestas automáticas de Meta Business Suite (Instagram) y los mensajes rápidos de WhatsApp Business. Una herramienta de automatización es opcional.</p>
+    </div>
+    <div>
+      <h3 style="margin-bottom:12px">Bio y destacadas</h3>
+      <div class="phone">
+        <div class="hd"><div class="av">RB</div><div><div class="nm">rentaboat · Morrocoy</div><div class="small">Alquiler de lanchas</div></div></div>
+        <div class="bio">Lanchas en Morrocoy, directo del dueño ⚓
+Capitán incluido · Ruta libre por los cayos
+Desde USD 190 · Marina Puerto Varadero, Tucacas
+👇 Precios y reservas</div>
+        <div class="lk">[web] · WhatsApp</div>
+        <div class="hl"><div><i></i>Precios</div><div><i></i>Flota</div><div><i></i>Reservar</div><div><i></i>Pagos</div><div><i></i>Ruta</div><div><i></i>Clientes</div><div><i></i>Capitanes</div><div><i></i>Operadores</div></div>
+      </div>
+      <p class="small" style="margin-top:12px">El enlace va a la web cuando tenga dominio; mientras tanto, directo a WhatsApp. Las destacadas reemplazan a las actuales (Clientes · Embarcaciones · Ofertas · Pagos · Services) y siguen el orden de las dudas: cuánto cuesta, qué lancha, cómo reservo, cómo pago, a dónde voy, quién ya fue.</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:34px">
+    <div class="card"><h3>Web: calculadora de reserva</h3><p class="small" style="margin-top:6px">Añadir al borrador web un selector: número de personas → lancha recomendada → precio total y por persona → 50% para reservar → botón de WhatsApp con el mensaje prellenado ("Hola, somos 6 para el sábado 24 en Highlander"). Ningún competidor tiene esto. Es la prueba visible del "precio claro".</p></div>
+    <div class="card"><h3>WhatsApp Business</h3><p class="small" style="margin-top:6px">Catálogo con las 6 lanchas y su precio, mensaje de bienvenida con las palabras clave, etiquetas (Nuevo · Cotizado · 50% pagado · Navegó) y una lista de difusión para clientes anteriores antes de cada puente.</p></div>
+  </div>
+</div></section>
+
+<!-- COLABS & B2B -->
+<section class="soft" id="colabs"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">07 · Alianzas</span><h2>UGC, colaboraciones y operadores turísticos</h2></div>
+  <div class="grid g3">
+    <div class="card"><h3>Clientes como contenido</h3><ul class="clean" style="margin-top:6px">
+      <li>Tarjeta a bordo con QR: "Etiquétanos y aparece en Clientes".</li>
+      <li>El capitán graba 3 clips por salida (zarpe, cayo, regreso) con permiso del cliente.</li>
+      <li>Repost diario en historias y un reel de clientes al mes con el marco de marca.</li>
+    </ul></div>
+    <div class="card"><h3>Colaboraciones locales</h3><ul class="clean" style="margin-top:6px">
+      <li>Posadas y anfitriones de Airbnb en Tucacas: código de referido con beneficio para el huésped.</li>
+      <li>Fotógrafos con drone: sesión a bordo como extra opcional.</li>
+      <li>Restaurantes de Tucacas: "lancha + almuerzo" en un mismo mensaje.</li>
+      <li>Creadores de Valencia y Caracas (10K-50K): un paseo a cambio de un reel con mención y precio visible.</li>
+    </ul></div>
+    <div class="card"><h3>B2B: operadores turísticos</h3><ul class="clean" style="margin-top:6px">
+      <li>El catálogo para operadores 2026 ya existe: actualizarlo cada temporada y enviarlo con la palabra OPERADOR.</li>
+      <li>Destacada "Operadores" y una lista de difusión de WhatsApp solo para agencias.</li>
+      <li>Un post mensual "para agencias" en LinkedIn o Facebook (opcional).</li>
+      <li>Definir con el dueño la tarifa neta o comisión y la regla de disponibilidad.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<!-- ADS -->
+<section id="ads"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">08 · Anuncios (servicio aparte)</span><h2>Plan inicial con presupuesto pequeño</h2>
+  <p>Objetivo: conversaciones de WhatsApp. Anuncios de clic a WhatsApp con los dos reels de venta (precio y capacidad). Los montos son una propuesta y se confirman con el cliente.</p></div>
+  <div class="grid g3">
+    <div class="card navy"><span class="eyebrow">Siempre activo</span><div class="num">USD 5</div><p class="small">por día · ~USD 150 al mes. Reel "El precio que nadie te dice" y "¿Cuántos son?".</p></div>
+    <div class="card navy"><span class="eyebrow">Antes de puentes</span><div class="num">+USD 10</div><p class="small">por día durante los 7-10 días previos (12 oct, 23 nov, 14 dic, 24 dic, 31 dic, Carnaval).</p></div>
+    <div class="card navy"><span class="eyebrow">Remarketing</span><div class="num">USD 2</div><p class="small">por día a quienes vieron el 50% de un reel o escribieron sin reservar. Reel "Reserva en 3 pasos".</p></div>
+  </div>
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card"><h4>Segmentación</h4><p class="small">Caracas, Valencia, Maracay, Barquisimeto y Puerto Cabello con radio de ciudad; 25-55 años; intereses de playa y viajes, o Advantage+ con el anuncio como guía. Reels e historias de Instagram + Facebook.</p></div>
+    <div class="card"><h4>Medición</h4><p class="small">Costo por conversación, conversaciones con fecha y personas, reservas con 50% pagado (registro manual del dueño en etiquetas de WhatsApp). Se revisa cada semana con el analista de GMDS.</p></div>
+  </div>
+</div></section>
+
+<!-- KPIs -->
+<section class="soft" id="kpis"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">09 · KPIs</span><h2>Cómo sabremos que funciona</h2>
+  <p>El mes 1 fija la línea base. Las metas sugeridas se ajustan en noviembre con datos reales.</p></div>
+  <div class="scroll"><table class="tbl" style="min-width:640px">
+    <thead><tr><th>Indicador</th><th>Dónde se mide</th><th>Meta sugerida (a validar)</th></tr></thead>
+    <tbody>
+      <tr><td><b>Conversaciones de reserva</b> (WhatsApp + DM con fecha y personas)</td><td>WhatsApp Business (etiquetas), Business Suite</td><td>Línea base en oct; +50% al tercer mes</td></tr>
+      <tr><td><b>Reservas con 50% pagado</b></td><td>Registro del dueño</td><td>Conversión conversación → reserva ≥ 20%</td></tr>
+      <tr><td><b>Palabras clave usadas</b> (MORROCOY, FECHA...)</td><td>Respuestas automáticas</td><td>Crecimiento mes a mes</td></tr>
+      <tr><td><b>Guardados + compartidos / alcance</b></td><td>Business Suite</td><td>≥ 3% en reels de venta</td></tr>
+      <tr><td><b>Retención a 3 s de los reels</b></td><td>Estadísticas del reel</td><td>Comparar ganchos y quedarse con los 3 mejores</td></tr>
+      <tr><td><b>Respuestas a historias y toques de enlace</b></td><td>Business Suite</td><td>Línea base; subir con encuestas y stickers</td></tr>
+      <tr><td><b>Seguidores nuevos</b></td><td>Business Suite</td><td>Indicador secundario: no se optimiza por seguidores</td></tr>
+      <tr><td><b>Costo por conversación</b> (si hay anuncios)</td><td>Ads Manager</td><td>Línea base en las primeras 2 semanas</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<!-- NEXT -->
+<section id="siguiente"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">10 · Próximos pasos</span><h2>Plan de arranque</h2></div>
+  <div class="grid g2">
+    <div class="card"><h3>Esta semana</h3><ul class="clean" style="margin-top:6px">
+      <li>Confirmar la cuenta de Instagram (usuario real) y el acceso en Business Suite.</li>
+      <li>Nueva bio, destacadas y respuestas automáticas con palabras clave.</li>
+      <li>Historias del puente del 12 de octubre con disponibilidad real.</li>
+      <li>Producir los reels 01 (precio) y 02 (capacidad).</li>
+    </ul></div>
+    <div class="card"><h3>Por confirmar con el cliente</h3><ul class="clean" style="margin-top:6px">
+      <li>¿Los precios públicos aplican todo el año o hay tarifa de temporada alta (diciembre, Carnaval, Semana Santa)?</li>
+      <li>¿Cómo funciona el pasajero extra (USD 20) frente a la capacidad máxima?</li>
+      <li>Año de inicio (para "19 años"), nombres y fotos de los capitanes.</li>
+      <li>¿Siguen en flota Sr. Crab's, Travesura y FX4? ¿Sigue vigente "compra ahora, paga después"?</li>
+      <li>¿Aceptan Binance o USDT? Tarifa neta para operadores.</li>
+      <li>Presupuesto de anuncios y método de pago de Meta.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p style="color:#fff;font-family:var(--head);font-size:18px;margin-bottom:6px">Rentaboat · Estrategia de redes · GMDS Agency</p>
+  <p>Datos de competencia leídos en Instagram el 7 de octubre de 2026 (perfiles públicos, 12 publicaciones más recientes). Las vistas de reels solo se pudieron leer completas para @inflabeach.</p>
+  <p style="margin-top:14px;color:#fff">Fuentes</p>
+  <ul class="src">
+    <li>Perfiles de Instagram citados en la tabla de mercado</li>
+    <li><a href="https://tulanchamorrocoy.com/">tulanchamorrocoy.com</a> · <a href="https://apartamentosentucacas.com/lancha_tucacas.php">apartamentosentucacas.com</a> · <a href="https://tulanchaentucacas.wixsite.com/tulanchaentucacas">tulanchaentucacas (Wix)</a></li>
+    <li>Feriados 2026: <a href="https://www.jibble.io/es/recursos/dias-feriados-venezuela-2026">Jibble</a> · Lunes bancarios: <a href="https://www.bloomberglinea.com/latinoamerica/venezuela/calendario-de-lunes-bancarios-en-venezuela-para-2026/">Bloomberg Línea (Sudeban)</a></li>
+    <li>Distancias, cayos y temporada seca: <a href="https://venezuela-investment-journal.onrender.com/morrocoy">venezuela-investment-journal</a> (fuente secundaria; validar con el capitán)</li>
+    <li>Fechas 2027 calculadas desde la Pascua del 28 de marzo de 2027</li>
+  </ul>
+</div></footer>
+</body>
+</html>
